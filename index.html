@@ -4,6 +4,15 @@
 <head>
   <title>Javascript concept</title>
   <link rel="stylesheet" href="styles.css">
+  <script>
+    function myFunction() {
+  document.getElementById("demo7").innerHTML = "Paragraph changed.";
+}  
+  </script>
+  <script>
+    document.getElementById("demo8").innerHTML = 5 + 6;
+  </script>
+
   <script src="index.js"></script>
 </head>
 
@@ -15,13 +24,14 @@
   <p id="demo5" style="display:none">Display</p>
   <p id="demo6" style="display:block">Display None</p>
   <p id="demo7">Paragraph</p>
+  <p id="demo8">Adding</p>
   <button type="button" onclick="document.getElementById('demo1').innerHTML=Date()">Date</button>
   <button type="button" onclick='document.getElementById("demo2").innerHTML = "Hello JavaScript!"'>Click Me!</button>
   <button type="button" onclick="document.getElementById('demo3').innerHTML = 'Hello JavaScript!'">Click Me!</button>
   <button type="button" onclick="document.getElementById('demo4').style.fontSize = '35px'";>Font Size!</button>
   <button type="button" onclick="document.getElementById('demo5').style.display='block'">display</button>
   <button type="button" onclick="document.getElementById('demo6').style.display='none'">None</button>
-  <button type="button" onclick="myFunction()">Change Button</button>
+  <button type="button" onclick="myFunction()">Try it</button>
 </body>
 
 </html>
