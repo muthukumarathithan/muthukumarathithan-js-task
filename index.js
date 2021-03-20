@@ -56,3 +56,23 @@ console.log(point);
 age = 20;
 job = "it";
 console.log(job);
+
+let testing1 = "5" + 5;
+console.log(testing1);
+
+let testing2 = 5 + "5";
+console.log(testing2);
+
+let testing3 = "5" + 5 + 5 + 5;
+console.log(testing3);
+
+let testing4 = 5 + 5 + 5 + "5";
+console.log(testing4);
+
+var length = 10;
+var lastname = "muthu";
+var x = { firstName: "ramadoss", lastName: "virat" };
+
+console.log(x);
+console.log(lastname);
+console.log(length)
