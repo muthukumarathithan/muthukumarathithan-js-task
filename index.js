@@ -111,6 +111,10 @@ console.log(ptr);
 ptr = texted.toLocaleLowerCase();
 console.log(ptr);
 
-var str = "P lease";
-var loc = str.indexOf("l");
+var str = "i w locate";
+var loc = str.indexOf("locate");
 console.log(loc);
+
+var str = "Apple, Banana, Kiwi";
+var res = str.substr(-4);
+console.log(res);
