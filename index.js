@@ -133,3 +133,70 @@ console.log(sta1);
 var stalin3 = "5";
 var sta3 = stalin3.padEnd(4, 0);
 console.log(sta3);
+var fruit = ["apple", "orange", "mongo", "Banana", "graps"];
+document.getElementById("demo").innerHTML = fruit;
+console.log(fruit);
+
+var fruit1 = fruit.length;
+console.log(fruit1);
+var fruit2 = fruit.length - 1;
+console.log(fruit2);
+
+var fruit5 = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo14").innerHTML = fruit5.join(" * ");
+console.log(fruit5);
+fruit5.push("graph");
+console.log(fruit5);
+fruit5.pop();
+console.log(fruit5);
+
+fruit5.splice(4, 0);
+console.log(fruit5);
+
+fruit5.slice(4, 4);
+console.log(fruit5);
+
+var text = "";
+var i;
+for (i = 0; i < 5; i++) {
+  text += "The number is " + i + "<br>";
+}
+document.getElementById("demo15").innerHTML = text;
+
+try {
+  console.log("hi");
+} catch (err) {
+  console.log(err);
+} finally {
+  console.log("i will be executed");
+}
+
+let carN = "benz";
+function myFunction10() {
+  var carN = "Volvo";
+  console.log(carN);
+}
+myFunction10();
+console.log("benz");
+
+var x;
+x = 5;
+console.log(x);
+
+const q = 6;
+
+console.log(q);
+
+var person = {
+  fullName: function() {
+    return this.firstName + " " + this.lastName;
+  }
+};
+
+var person1 = {
+  firstName: "muthu",
+  lastName: "kumar",
+  id: 5566
+};
+person.fullName.call(person1);
+console.log(person);
