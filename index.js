@@ -118,3 +118,18 @@ console.log(loc);
 var str = "Apple, Banana, Kiwi";
 var res = str.substr(-4);
 console.log(res);
+
+var stalin = "please vistied microsoft";
+var res1 = stalin.replace("microsoft", "w3schools");
+console.log(res1);
+var stalin1 = "please microsoft visted microsoft";
+var res2 = stalin1.replace("microsoft\n", "w3schools");
+console.log(res2);
+
+var stalin2 = "5";
+var sta1 = stalin2.padStart(4, 0);
+console.log(sta1);
+
+var stalin3 = "5";
+var sta3 = stalin3.padEnd(4, 0);
+console.log(sta3);
