@@ -75,4 +75,42 @@ var x = { firstName: "ramadoss", lastName: "virat" };
 
 console.log(x);
 console.log(lastname);
-console.log(length)
+console.log(length);
+
+var xy = myFunction(4, 3); // Function is called, return value will end up in x
+
+function myFunction(a, b) {
+  return a * b; // Function returns the product of a and b
+}
+
+console.log(xy);
+console.log(myFunction(5, 5));
+
+document.getElementById("demo11").innerHTML = xy;
+
+myFunction1();
+function myFunction1() {
+  var carName = "Volvo";
+  document.getElementById("demo12").innerHTML = typeof carName + " " + carName;
+}
+document.getElementById("demo13").innerHTML = typeof carName;
+
+var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+sln = txt.length;
+console.log(sln);
+
+var texted = " hello world to all the data   ";
+
+ptr = texted.toString();
+console.log(ptr);
+ptr = texted.toUpperCase();
+console.log(ptr);
+ptr = texted.toLowerCase();
+
+console.log(ptr);
+ptr = texted.toLocaleLowerCase();
+console.log(ptr);
+
+var str = "P lease";
+var loc = str.indexOf("l");
+console.log(loc);
