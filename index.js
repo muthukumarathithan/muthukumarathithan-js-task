@@ -187,16 +187,34 @@ const q = 6;
 
 console.log(q);
 
-var person = {
+var person1 = {
   fullName: function() {
     return this.firstName + " " + this.lastName;
   }
 };
 
-var person1 = {
+var person2 = {
   firstName: "muthu",
   lastName: "kumar",
   id: 5566
 };
-person.fullName.call(person1);
-console.log(person);
+person1.fullName.call(person2);
+console.log(person1.fullName.call(person2));
+
+class car {
+  constructor(name, year) {
+    this.name = name;
+    this.age = age;
+  }
+}
+
+let car1 = new car("audi", 200);
+console.log(car1);
+
+let car2 = new car("benz", 4000);
+console.log(car2);
+
+var x = 15 * 5;
+debugger;
+
+console.log(x);
