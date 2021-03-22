@@ -218,3 +218,149 @@ var x = 15 * 5;
 debugger;
 
 console.log(x);
+
+function validateForm() {
+  var x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+
+var person = { firstName: "John", lastName: "Doe", age: 50, eyeColor: "blue" };
+
+console.log(person);
+
+var person = {
+  firstName: "John",
+  lastName: "Doe",
+  age: 50,
+  eyeColor: "blue"
+};
+
+console.log(person);
+
+var person = new Object();
+person.firstName = "muthu";
+person.lastName = "kumar";
+person.age = 30;
+person.eyeColor = "red";
+
+console.log(person);
+
+var person = {
+  firstName: "muthu",
+  lastName: "kumar",
+  age: 30,
+  eyeColor: "red"
+};
+
+var x = person;
+x.age = 10;
+x.lastName = "yam";
+console.log(person.age);
+console.log(person.firstName);
+console.log(person.lastName);
+
+var text = "";
+var person = {
+  firstName: "muthu",
+  lastName: "kumar"
+};
+var x;
+
+for (x in person) {
+  text += person[x];
+  console.log(person[x]);
+}
+
+var person = { name: "John", age: 30, city: "New York" };
+
+var myString = JSON.stringify(person);
+console.log(myString);
+
+var person = {
+  name: "John",
+  age: function() {
+    return 30;
+  }
+};
+
+var myString = JSON.stringify(person);
+console.log(myString);
+
+var person = {
+  name: "John",
+  age: 30,
+  language: "en",
+  get lang() {
+    return this.language;
+  }
+};
+
+console.log(person.language);
+
+var person = {
+  name: "John",
+  age: 30,
+  language: "",
+  set lang(lang) {
+    this.language = lang;
+  }
+};
+
+person.lang = "en";
+
+console.log(person.language);
+
+function myDisplayer(some) {
+  document.getElementById("demo16").innerHTML = some;
+  console.log(some);
+}
+
+let myPromise = new Promise(function(resolve, reject) {
+  let x = 1;
+  if (x == 0) {
+    resolve("ok");
+  } else {
+    reject("error");
+  }
+});
+
+myPromise.then(
+  function(value) {
+    myDisplayer(value);
+  },
+  function(error) {
+    myDisplayer(error);
+  }
+);
+
+function myCalculator(num1, num2) {
+  let sum = num1 + num2;
+  return sum;
+}
+
+let result = myCalculator(5, 5);
+myDisplayer(result);
+
+setTimeout(myFunction(), 30000);
+
+function myFunction() {
+  console.log("hello world");
+}
+
+function mOver(obj) {
+  obj.innerHTML = "Thank You";
+}
+
+function mOut(obj) {
+  obj.innerHTML = "Mouse Over Me";
+}
+
+document.getElementById("demo17").innerHTML =
+  "The full URL of this page is:<br>" + window.location.port;
+
+function newDoc() {
+  window.location.assign("https://www.w3schools.com");
+}

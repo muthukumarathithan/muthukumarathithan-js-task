@@ -31,6 +31,8 @@
   <p id="demo13">Bus1</p>
   <p id="demo14">fruit</p>
   <p id="demo15">fruit</p>
+  <p id="demo16">fruit</p>
+  <p id="demo17">fruit</p>
   <button type="button" onclick="document.getElementById('demo1').innerHTML=Date()">Date</button>
   <button type="button" onclick='document.getElementById("demo2").innerHTML = "Hello JavaScript!"'>Click Me!</button>
   <button type="button" onclick="document.getElementById('demo3').innerHTML = 'Hello JavaScript!'">Click Me!</button>
@@ -42,6 +44,16 @@
   <button type="button" onclick="document.getElementById("demo9").innerHTML = 5 + 6";
 ">Adding New</button>
 <button onclick="this.innerHTML=Date()">The time is?</button>
+  <input type="button" value="Load new document" onclick="newDoc()">
+
+
+  <br/>
+
+  <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+    Name: <input type="text" name="fname">
+    <input type="submit" value="Submit">
+  </form>
+
 </body>
 
 </html>
